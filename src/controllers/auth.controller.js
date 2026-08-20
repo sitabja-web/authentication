@@ -3,10 +3,9 @@ import crypto from "crypto";
 import jwt from "jsonwebtoken";
 import config from "../config/config.js";
 import sessionModel from "../models/session.model.js";
-import { sendEmail } from "../services/email.service.js";
+import { sendEmail } from "../services/email.js";
 import { generateOtp, getOtpHtml } from "../utils/utils.js";
 import otpModel from "../models/otp.model.js";
-
 
 export async function register(req, res) {
 
